@@ -1,4 +1,4 @@
-# TacticsRESTAPI
+# Tactics REST API
 
 Simple RESTful API with Java, Spring Boot, H2 Database, and JPA, implementing CRUD operations for Tactics.
 
