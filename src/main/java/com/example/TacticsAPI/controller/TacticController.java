@@ -26,6 +26,12 @@ public class TacticController {
         return service.getTactic(id).orElse(null);
     }
 
+    @PutMapping("/{id}")
+    public Tactic updateTactic(@PathVariable Long id, @RequestBody Tactic tactic) {
+        tactic.setId(id);
+        return service.save(tactic);
+    }
+
     @PostMapping
     public Tactic addTactic(@RequestBody Tactic tactic) {
         return service.save(tactic);
